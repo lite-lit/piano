@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing:border-box
+}
+
+body {
+  margin:0;
+  background:#222
+}
+
+ul {
+  height:18.875em;
+  width: 90%;
+  margin:5em auto;
+  padding:3em 0 0 3em;
+  position:relative;
+  border:1px solid #160801;
+  border-radius:1em;
+  background:linear-gradient(to bottom right,rgba(0,0,0,0.3),rgba(0,0,0,0)),url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/187/vwood.png);
+  box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5)
+}
+
+li {
+  margin:0;
+  padding:0;
+  list-style:none;
+  position:relative;
+  float:left
+}
+
+ul .white {
+  height:16em;
+  width:4em;
+  z-index:1;
+  border-left:1px solid #bbb;
+  border-bottom:1px solid #bbb;
+  border-radius:0 0 5px 5px;
+  box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
+  background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+}
+
+ul .white:active {
+  border-top:1px solid #777;
+  border-left:1px solid #999;
+  border-bottom:1px solid #999;
+  box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+  background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
+}
+
+.black {
+  height:8em;
+  width:2em;
+  margin:0 0 0 -1em;
+  z-index:2;
+  border:1px solid #000;
+  border-radius:0 0 3px 3px;
+  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+  background:linear-gradient(45deg,#222 0%,#555 100%)
+}
+
+.black:active {
+  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+  background:linear-gradient(to right,#444 0%,#222 100%)
+}
+
+.a,.g,.f,.d,.c {
+  margin:0 0 0 -1em
+}
+
+ul li:first-child {
+  border-radius:5px 0 5px 5px
+}
+
+ul li:last-child {
+  border-radius:0 5px 5px 5px
+}
+    </style>
+</head>
+<body>
+    <ul class="set">
+        <a href="/c4"><li class="white e"></li></a>
+        <a href="/cs4"><li class="black ds"></li></a>
+        <a href="/d4"><li class="white d"></li></a>
+        <a href="/ds4"><li class="black cs"></li></a>
+        <a href="/e4"><li class="white c"></li></a>
+        <a href="/f4"><li class="white b"></li></a>
+        <a href="/fs4"><li class="black as"></li></a>
+        <a href="/g4"><li class="white a"></li></a>
+        <a href="/gs4"><li class="black gs"></li></a>
+        <a href="/a4"><li class="white g"></li></a>
+        <a href="/as4"><li class="black fs"></li></a>
+        <a href="/b4"><li class="white f"></li></a>
+
+        <a href="/c5"><li class="white e"></li></a>
+        <a href="/cs5"><li class="black ds"></li></a>
+        <a href="/d5"><li class="white d"></li></a>
+        <a href="/ds5"><li class="black cs"></li></a>
+        <a href="/e5"><li class="white c"></li></a>
+        <a href="/f5"><li class="white b"></li></a>
+        <a href="/fs5"><li class="black as"></li></a>
+        <a href="/g5"><li class="white a"></li></a>
+        <a href="/gs5"><li class="black gs"></li></a>
+        <a href="/a5"><li class="white g"></li></a>
+        <a href="/as5"><li class="black fs"></li></a>
+        <a href="/b5"><li class="white f"></li></a>
+        
+        <a href="/c"><li class="white e"></li></a>
+        <a href="/cs"><li class="black ds"></li></a>
+        <a href="/d"><li class="white d"></li></a>
+        <a href="/ds"><li class="black cs"></li></a>
+        <a href="/e"><li class="white c"></li></a>
+        <a href="/f"><li class="white b"></li></a>
+        <a href="/fs"><li class="black as"></li></a>
+        <a href="/g"><li class="white a"></li></a>
+        <a href="/gs"><li class="black gs"></li></a>
+        <a href="/a"><li class="white g"></li></a>
+        <a href="/as"><li class="black fs"></li></a>
+        <a href="/b"><li class="white f"></li></a>
+        
+      </ul>
+<script>
+  document.addEventListener('keydown', function(e){
+    const keycode = e.keyCode;
+    switch(keycode){
+      case 81: //4옥 
+        location.href = "/c4"; //도
+        break;
+      
+      case 87:
+        location.href = "/d4"; //레
+        break;
+      
+      case 69:
+        location.href = "/e4"; //미
+        break;
+      case 82:
+        location.href = "/f4"; //파
+        break;
+     
+      case 84:
+        location.href = "/g4"; //솔
+        break;
+      
+      case 88:
+        location.href = "/a4"; //라
+        break;
+      
+      case 85:
+        location.href = "/b4"; //시
+        break;
+        
+      //5옥
+      case 73: 
+        location.href = "/c5"; 
+        break;
+      
+      case 79:
+        location.href = "/d5";
+        break;
+      
+      case 80:
+        location.href = "/e5";
+        break;
+      case 65:
+        location.href = "/f5";
+        break;
+      
+      case 83:
+        location.href = "/g5";
+        break;
+      
+      case 68:
+        location.href = "/a5";
+        break;
+      
+      case 70: //엔터
+        location.href = "/b5";
+        break;
+      
+      //6옥
+      case 71: 
+        location.href = "/c";
+        break;
+      
+      case 72:
+        location.href = "/d";
+        break;
+      
+      case 74:
+        location.href = "/e";
+        break;
+      case 75:
+        location.href = "/f";
+        break;
+      
+      case 76:
+        location.href = "/g";
+        break;
+      
+      case 90:
+        location.href = "/a";
+        break;
+      
+      case 89: //위 방향키
+        location.href = "/b";
+        break;
+      
+      }
+  })
+</script>
+</body>
+</html>
